@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anton Ramos - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 scroll-smooth bg-gradient-to-br from-purple-100 to-blue-200 opacity-0 transition-opacity duration-1000">
+    <header class="bg-gradient-to-r from-purple-600 to-blue-600 text-white fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold animate-fadeInUp">Anton Ramos</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:text-yellow-300 transition duration-300 animate-fadeInUp" style="animation-delay: 0.2s;">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-300 transition duration-300 animate-fadeInUp" style="animation-delay: 0.4s;">About</a></li>
+                <li><a href="#projects" class="hover:text-yellow-300 transition duration-300 animate-fadeInUp" style="animation-delay: 0.6s;">Projects</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300 transition duration-300 animate-fadeInUp" style="animation-delay: 0.8s;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-100 to-blue-100 opacity-0 transform translate-y-5 transition duration-500 ease-in-out">
+        <div class="container mx-auto px-4 flex flex-wrap items-center">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <h2 class="text-4xl font-bold mb-4 text-center text-purple-600 animate-fadeInUp" style="animation-delay: 1s;">Welcome to My Portfolio</h2>
+                <p class="text-xl mb-6 text-center animate-fadeInUp" style="animation-delay: 1.2s;">Hi, I'm Anton Ramos. I'm a passionate developer creating amazing web experiences.</p>
+                <div class="text-center">
+                    <a href="#contact" class="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 transform hover:scale-105 animate-fadeInUp" style="animation-delay: 1.4s;">Contact Me</a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 animate-fadeInUp" style="animation-delay: 1.6s;">
+                <img src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fHww" alt="Anton Ramos" class="w-full h-auto rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-blue-100 opacity-0 transform translate-y-5 transition duration-500 ease-in-out">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center text-green-600">About Me</h2>
+            <p class="text-xl text-center">I'm a skilled web developer with experience in various technologies. I love creating intuitive and efficient solutions.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-100 to-orange-100 opacity-0 transform translate-y-5 transition duration-500 ease-in-out">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center text-yellow-600">My Projects</h2>
+            <p class="text-xl mb-4 text-center">Here are some of my recent projects:</p>
+            <ul class="list-none text-xl space-y-4">
+                <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">Project 1</li>
+                <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">Project 2</li>
+                <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">Project 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-100 to-pink-100 opacity-0 transform translate-y-5 transition duration-500 ease-in-out">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6 text-center text-red-600">Contact Me</h2>
+            <form class="max-w-lg mx-auto bg-white shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                        Name
+                    </label>
+                    <input class="shadow appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-purple-500" id="name" type="text" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                        Email
+                    </label>
+                    <input class="shadow appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-purple-500" id="email" type="email" placeholder="your@email.com">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                        Message
+                    </label>
+                    <textarea class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-purple-500" id="message" rows="4" placeholder="Your message here"></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button class="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105" type="button">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            <p class="text-center text-gray-700 text-sm mt-4">
+                Or email me directly at: <a href="mailto:anton.ramos@email.com" class="text-purple-600 hover:text-purple-800">anton.ramos@email.com</a>
+            </p>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="w-full md:w-1/3 text-center md:text-left mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold">Anton Ramos</h3>
+                    <p class="mt-2">Web Developer</p>
+                </div>
+                <div class="w-full md:w-1/3 text-center mb-4 md:mb-0">
+                    <ul class="inline-flex space-x-4">
+                        <li><a href="#" class="hover:text-yellow-300 transition duration-300">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-yellow-300 transition duration-300">GitHub</a></li>
+                        <li><a href="#" class="hover:text-yellow-300 transition duration-300">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3 text-center md:text-right">
+                    <p>&copy; <script>document.write(new Date().getFullYear());</script> Anton Ramos. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            // Fade in body
+            document.body.style.opacity = '1';
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0', 'translate-y-5');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        navLinks.forEach(link => {
+                            if (link.getAttribute('href').slice(1) === entry.target.id) {
+                                link.classList.add('text-yellow-300');
+                            } else {
+                                link.classList.remove('text-yellow-300');
+                            }
+                        });
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.3
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
